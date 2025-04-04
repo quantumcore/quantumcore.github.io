@@ -15,14 +15,11 @@ url: "https://quantumcore.github.io"
 github:
   username: quantumcore
 
-twitter:
-  username: your_twitter_handle  # Optional
 
 social:
   name: Fahad
-  email: contact@yourdomain.com
+  email: quantumcore@protonmail.com
   links:
-    - https://twitter.com/your_twitter_handle
     - https://github.com/quantumcore
 
 webmaster_verifications:
