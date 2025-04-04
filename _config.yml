@@ -15,7 +15,6 @@ url: "https://quantumcore.github.io"
 github:
   username: quantumcore
 
-
 social:
   name: Fahad
   email: quantumcore@protonmail.com
@@ -52,29 +51,9 @@ pageviews:
 theme_mode: dark
 
 cdn:
-
-avatar: /assets/img/avatar.png
-
-social_preview_image: /assets/img/social-preview.png
-
-toc: true
-
-comments:
-  provider: giscus
-  giscus:
-    repo: quantumcore/quantumcore.github.io
-    repo_id: YOUR_REPO_ID
-    category: General
-    category_id: YOUR_CATEGORY_ID
-    mapping: pathname
-    strict: 0
-    input_position: bottom
-    lang: en
-    reactions_enabled: 1
-
-assets:
-  self_host:
-    enabled:
+  assets:
+    self_host:
+      enabled:
     env:
 
 pwa:
