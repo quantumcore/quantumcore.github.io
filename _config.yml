@@ -1,9 +1,8 @@
-title: QuantumCore Blog
+title: QuantumCore
 description: Technical insights on red teaming, malware development, threat hunting, and deep-dive security research.
 author: "Fahad"
 
 theme: minima
-remote_theme: jekyll/minima
 minima:
   skin: dark
 baseurl: "" 
