@@ -3,6 +3,7 @@ description: Technical insights on red teaming, malware development, threat hunt
 author: "Fahad"
 
 theme: minima
+remote_theme: jekyll/minima
 minima:
   skin: dark
 baseurl: "" 

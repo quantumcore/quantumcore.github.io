@@ -1,10 +1,10 @@
----
----
+    ---
+    ---
 
-@import "minima";
+    @import "minima";
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-body {
-    font-family: 'Montserrat', sans-serif;
-    color: #383838;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+    body {
+        font-family: 'Fira Code', monospace;
+        color: #383838;
+    }
