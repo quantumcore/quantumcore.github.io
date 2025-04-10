@@ -253,7 +253,7 @@ def track_click(tracker_id):
 
 The entire system would look like the following:
 
-![](/home/fahad/.config/marktext/images/2025-04-10-15-15-57-image.png)
+![](Screenshot_20250410_151554.png)
 
 
 
@@ -300,7 +300,7 @@ And this is how the end result would look like, visting the flask app on /opens 
 
 
 
-![](Screenshot_20250410_151554.png)
+![](image.png)
 
 
 
