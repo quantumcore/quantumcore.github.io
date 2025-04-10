@@ -253,7 +253,7 @@ def track_click(tracker_id):
 
 The entire system would look like the following:
 
-![]([Screenshot_20250410_151554.png](https://github.com/quantumcore/quantumcore.github.io/blob/master/_posts/Screenshot_20250410_151554.png?raw=true))
+![Screenshot_20250410_151554.png](https://github.com/quantumcore/quantumcore.github.io/blob/master/_posts/Screenshot_20250410_151554.png?raw=true)
 
 
 
