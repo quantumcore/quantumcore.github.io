@@ -112,7 +112,7 @@ Using the following code, We can send email for each user in the csv with their 
 def send_tracked_email(recipient, rid, body=None):
     if body is None:
         body = f"""
-        Click here: <a href="https://hackme.ltd/?rid={rid}">https://alfalahinsurance.com/</a>
+        Click here: <a href="https://hackme.ltd/?rid={rid}">https://hackme.ltd/</a>
         """
     
     # Generate unique tracking IDs
