@@ -3,7 +3,8 @@ description: Technical insights on red teaming, malware development, threat hunt
 author: "Fahad"
 
 theme: minima
-
+minima:
+  skin: dark
 baseurl: "" 
 url: "https://quantumcore.github.io"
 repository: quantumcore/quantumcore.github.io

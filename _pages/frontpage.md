@@ -2,25 +2,9 @@
 permalink: /
 layout: home
 title: Welcome
-list_title: My blog posts
+list_title: Blog
 ---
 
-This is a template and some instructions for running Github Pages with the [`minima` theme][minima]. This repo has what I consider the minimum pieces for a personal blog using [Jekyll][jk] and [Github Pages][gh-site].
+I'm Fahad,a cybersecurity professional passionate about red teaming, malware development, and threat hunting. I specialize in offensive security, reverse engineering, kernel-level development, and real-world attack simulation.
 
-Check out the excellent [`minima` theme][minima] documentation for further details and customization and the [official docs][gh] for more details on how Github Pages work.
-
-Do you have questions? feel free to [open an issue][issue] or find out how toreach me from my [contact page][contact].
-
-<img src="./assets/imgs/screenshot.png" width="400px">
-
-For more details about how this example site works checkout [the github project](https://github.com/jsanz/gh-pages-minima-starter).
-
-
-Have a great day!!
-
-[gh-site]: https://pages.github.com/
-[minima]: https://github.com/jekyll/minima/tree/2.5-stable
-[jk]: https://jekyllrb.com/
-[gh]: https://help.github.com/en/github/working-with-github-pages
-[issue]: https://github.com/jsanz/gh-pages-minima-starter/issues/new/choose
-[contact]: https://jorgesanz.net/contact/
+You’ll find some interesting stuff here to read. 
