@@ -295,7 +295,7 @@ And this is how the end result would look like, visting the flask app on /opens 
 
 
 
-![](2025-04-10-15-25-36-image.png)
+![](Screenshot_20250410_151554.png)
 
 
 
