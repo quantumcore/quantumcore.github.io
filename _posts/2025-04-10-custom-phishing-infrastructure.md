@@ -83,7 +83,7 @@ At this point, Step 1 is complete, A typosquatted website that captures the data
 
 ##### 2. Mail Tracking System
 
-Since gophish email clicks, We have to implement this feature. This data is valuable to us to see which users clicked the phishing email, And which user clicked the links in the email.
+Since gophish logs email clicks, We have to implement this feature. This data is valuable to us to see which users clicked the phishing email, And which user clicked the links in the email.
 
 
 
