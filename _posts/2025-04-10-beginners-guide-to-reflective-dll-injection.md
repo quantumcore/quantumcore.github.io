@@ -62,7 +62,7 @@ The DLL function Send(const char* data); is used to send the Injecting program t
 On the Injecting Side
 
 https://github.com/quantumcored/ReflectiveDLLInjection/blob/master/inject/src/Output.cpp
-```
+```c
 #include "Output.h"
 
 BOOL Run = FALSE;
@@ -147,7 +147,7 @@ std::string ReadReflectiveDllOutput(int Timeout)
 Before Injection of the DLL, The Prepare(); function is called which starts the Named Pipe Thread to receive the DLL Output. You can see example usage of this here :
 
 https://github.com/quantumcored/ReflectiveDLLInjection/blob/master/inject/src/Inject.cpp
-```
+```c
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include <stdio.h>
@@ -274,7 +274,7 @@ Then the Reflective DLL is injected and Writes the output to the Named Pipe Serv
 This one didn’t require any modifications, The original Reflective DLL Injection allows you to pass parameters using LoadRemoteLibraryR function.
 
 Example Code :
-```
+```c
 // Sample code of Injector that passes parameter to the dll
 int main( int argc, char * argv[] )
 {
@@ -337,12 +337,12 @@ The Example code above expects the dll to be in unsigned char* DLL and it passes
 
 ### Reading Parameters in the DLL
 In your reflective dll, The parameters are in lpReserverd, From which a string an easily be extracted by.
-```
+```c
 char* cpCommandLine = (char*)lpReserved;
 ```
 
 Sample Code :
-```
+```c
 #include "ReflectiveLoader.h"
 #include "Output.h"
 extern HINSTANCE hAppInstance;
@@ -404,7 +404,7 @@ BOOL WINAPI DllMain( HINSTANCE hinstDLL, DWORD dwReason, LPVOID lpReserved )
 I’m gonna be using this as base to build our sample DLL. This, Currently, Shows a message box and returns output “Evening the Odds”. I wrote this for testing Outputs.
 
 Let’s make a DLL that Reads in a URL from Parameters and Opens it, Then return output.
-```
+```c
 #include "ReflectiveLoader.h"
 #include "Output.h"
 #include <shellapi.h>
@@ -443,7 +443,7 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD dwReason, LPVOID lpReserved)
 The above dll is pretty simple, It reads in the url from parameters, Opens the url using ShellExecute and sends output to the injector that the url Url was opened.
 
 But a Reflective DLL is nothing without the injector. So let’s make a complete injector for this.
-```
+```c
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include <stdio.h>
@@ -578,7 +578,7 @@ The DLL can also be loaded over a network using Sockets, And injected.
 Sample code :
 
 https://github.com/quantumcored/remote_hacker_probe/blob/main/probe/windows/ProbeCpp.cpp#L257
-```
+```c
 unsigned char* DLL = (unsigned char*) HeapAlloc(GetProcessHeap(), 0, expected + 1); // This is where DLL will be stored
 // Where 'expected' is the Size of the dll.
 
