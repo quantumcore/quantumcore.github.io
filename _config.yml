@@ -5,6 +5,7 @@ author: "Fahad"
 theme: minima
 minima:
   skin: dark
+  date_format: "%Y-%m-%d"
 baseurl: "" 
 url: "https://quantumcore.github.io"
 repository: quantumcore/quantumcore.github.io
@@ -14,10 +15,6 @@ linkedin_username: quantumcore
 rss: rss
 
 show_excerpts: true
-
-minima:
-  date_format: "%Y-%m-%d"
-
 # Minima: custom header links
 header_pages:
   - _pages/frontpage.md
