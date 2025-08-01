@@ -18,7 +18,7 @@ When law enforcement comes knocking, understand that you’ve handed them everyt
 #### Setting up Discord BOT
 
 - Go to [Discord Developer portal](https://discord.com/developers/applications) and create a "New Application", name it anything you want.
-- ![devportal](./discord1.png)
+- ![devportal](https://raw.githubusercontent.com/quantumcore/quantumcore.github.io/refs/heads/master/_posts/discord1.png)
 - Go to Bot -> **Reset Token**. Copy the token, It is the only thing that we will need.
 
 ### Lets Code
@@ -143,7 +143,7 @@ std::string execute_command(const std::wstring& cmd) {
 ```
 
 The above function executes system command and returns its output as a string. When it is called from within the code, it should look something like:
-![shell1](shell1.png)
+![shell1](https://raw.githubusercontent.com/quantumcore/quantumcore.github.io/refs/heads/master/_posts/shell1.png)
 
 ### Bot token hardcoding
 Since the bot token is hardcoded as a string, IT can be easily extracted with simple RE techniques. To handle this, You can encrypt the bot token or place it at EOF in the binary after its built, and make the code read the bot token from EOF when it is started. I can go over through that but that is a topic that deserves its own post.
