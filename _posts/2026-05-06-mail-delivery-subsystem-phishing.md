@@ -7,11 +7,11 @@ author: Fahad
 
 Received a message indicating that the mail delivery subsystem had failed to send three emails. It immediately stood out as suspicious.
 
-![1](https://github.com/quantumcore/quantumcore.github.io/blob/master/_posts/phishmail1.png)
+![1](phishmail1.png)
 
 Link takes to https://red-blondell-19.tiiny.site/
 The page mimicks a standard authentication portal. It included a login form requesting an email address and password.
-![2](https://github.com/quantumcore/quantumcore.github.io/blob/master/_posts/phishmail2.png)
+![2](phishmail2.png)
 
 Interesting Page Source code:
 ```html
@@ -83,7 +83,7 @@ The browser never sends credentials to a legitimate authentication backend. Inst
 - Data is assembled into a structured JSON object
 
 When I intercepted the traffic using Burp Suite, I captured an **HTTP OPTIONS request** to:
-![3](https://github.com/quantumcore/quantumcore.github.io/blob/master/_posts/phishmail3.png)
+![3](phishmail3.png)
 
 The browser is enforcing the **Same-Origin Policy (SOP)**.
 
@@ -111,7 +111,7 @@ This is a **permission check**, not a data transfer.
 ## Credential Exfiltration Request (POST)
 
 Immediately after the preflight approval, the actual credential payload is transmitted:
-![4](https://github.com/quantumcore/quantumcore.github.io/blob/master/_posts/phishmail4.png)
+![4](phishmail4.png)
 
 ## WHOIS Findings for submit-form.com
 From the record:
@@ -125,6 +125,6 @@ From the record:
 This confirms that the domain is part of a modular phishing setup where ownership is hidden, and infrastructure is distributed across multiple providers to reduce detection and takedown risk.
 
 Still at low detection risk on virustotal.
-![5](https://github.com/quantumcore/quantumcore.github.io/blob/master/_posts/phishmail5.png)
+![5](phishmail5.png)
 
-![6](https://github.com/quantumcore/quantumcore.github.io/blob/master/_posts/phishmail6.png)
+![6](phishmail6.png)
