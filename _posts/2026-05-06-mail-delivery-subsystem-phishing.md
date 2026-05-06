@@ -7,7 +7,7 @@ author: Fahad
 
 Received a message indicating that the mail delivery subsystem had failed to send three emails. It immediately stood out as suspicious.
 
-![1](./phishmail1.png)
+![1](phishmail1.png)
 
 Link takes to https://red-blondell-19.tiiny.site/
 The page mimicks a standard authentication portal. It included a login form requesting an email address and password.
