@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Discord as C2 Implementation Guide"
+date: 2025-07-31
+author: Fahad
+---
+
 ##### Using Discord as a C2
 
 While researching online, I came across convoC2, a project that uses Microsoft Teams as a Command and Control (C2) server. It immediately took me back to my malware development days. That sparked an idea; why not build something similar using Discord as the C2 channel?

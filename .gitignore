@@ -5,3 +5,6 @@ _site/
 .vscode
 **/*.swp
 env
+.bundle/
+vendor/
+_config_theme-dev.yml

@@ -1,22 +1,99 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
-  {%- include head.html -%}
+{%- include head.html -%}
 
-  <body>
-
-    {%- include header.html -%}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
+<body>
+  <div class="app-container">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <a class="sidebar-logo" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
       </div>
-    </main>
 
-    {%- include footer.html -%}
+      <nav class="sidebar-nav">
+        <div class="nav-group">
+          <div class="nav-group-title">// Navigation</div>
+          {%- for path in site.header_pages -%}
+            {%- assign hyperpage = site.pages | where: "path", path | first -%}
+            {%- if hyperpage and hyperpage.title %}
+          <a class="nav-item" href="{{ hyperpage.url | relative_url }}">
+            <span class="nav-indicator"></span>
+            <span class="nav-label">{{ hyperpage.title | escape }}</span>
+          </a>
+            {%- endif -%}
+          {%- endfor %}
+        </div>
 
-    {%- include sub-footer.html -%}
+        {%- if site.posts.size > 0 %}
+        <div class="nav-group">
+          <div class="nav-group-title">// Recent Posts</div>
+          {%- for post in site.posts limit: 6 %}
+          <a class="nav-item nav-item-post" href="{{ post.url | relative_url }}">
+            <span class="nav-indicator"></span>
+            <span class="nav-label">{{ post.title | escape | truncate: 32 }}</span>
+          </a>
+          {%- endfor %}
+        </div>
+        {%- endif %}
+      </nav>
 
-  </body>
+      <div class="sidebar-footer">
+        <div class="sidebar-status">
+          <span class="status-dot"></span>
+          <span class="status-text">connected</span>
+        </div>
+        <div class="sidebar-links">
+          {%- if site.github_username %}
+          <a class="sidebar-icon-link" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          {%- endif %}
+          {%- if site.linkedin_username %}
+          <a class="sidebar-icon-link" href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener" title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          {%- endif %}
+          <a class="sidebar-icon-link" href="{{ '/feed.xml' | relative_url }}" target="_blank" title="RSS Feed">
+            <i class="fa-solid fa-rss"></i>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="main-wrapper">
+      <header class="topbar">
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+        <div class="topbar-left">
+          <span class="topbar-path">{% if page.title %}{{ page.title | slugify }}{% else %}home{% endif %}</span>
+        </div>
+        <div class="topbar-right">
+          {%- if site.github_username %}
+          <a class="topbar-icon-link" href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          {%- endif %}
+        </div>
+      </header>
+
+      <main class="main-content" aria-label="Content">
+        {{ content }}
+      </main>
+
+      <footer class="main-footer">
+        <span class="footer-text">{{ site.title }} &copy; {{ 'now' | date: "%Y" }}</span>
+        <span class="footer-separator">//</span>
+        <span class="footer-text">Powered by Jekyll</span>
+      </footer>
+    </div>
+  </div>
+
+  <div id="toast-container" class="toast-container"></div>
+
+  {%- include sub-footer.html -%}
+</body>
 
 </html>
