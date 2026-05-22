@@ -15,6 +15,7 @@ linkedin_username: quantumcore
 rss: rss
 
 show_excerpts: true
+future: true
 # Minima: custom header links
 header_pages:
   - _pages/about.md
