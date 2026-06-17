@@ -16,7 +16,7 @@ Woolexa Stealer is a .NET Framework 4.8 information stealer and remote access tr
 **Severity:** Critical  
 **Malware Class:** Infostealer / RAT  
 **Target Sector:** General consumers (Discord gaming community)  
-**Origin Attribution:** Turkish-speaking developer(s), tracked as `shelcodeloader`
+**Origin Attribution:** Turkish-speaking developer(s), tracked as `KUXEY`
 
 ---
 
@@ -27,7 +27,7 @@ Woolexa Stealer is a .NET Framework 4.8 information stealer and remote access tr
 - The `bigscreenmod.com` domain is the sole C2 infrastructure, registered March 2026 via GoDaddy, fronted by Cloudflare.
 - No privilege escalation exploit is used; UAC bypass relies on registry manipulation and `runas` elevation.
 - Persistence is primarily achieved through WMI event subscription, with a scheduled task fallback.
-- The developer machine hostname (`KUXEY`) and PDB path point to a developer using the alias `shelcodeloader`.
+- The developer machine hostname (`KUXEY`) and PDB path point to a developer using the path `shelcodeloader`.
 
 ---
 
@@ -54,7 +54,7 @@ Woolexa Stealer is a .NET Framework 4.8 information stealer and remote access tr
 | Date (Estimated) | Event |
 |---|---|
 | March 2026 | `bigscreenmod.com` registered via GoDaddy |
-| Pre-June 2026 | Woolexa Stealer developed on machine `KUXEY` by `shelcodeloader` |
+| Pre-June 2026 | Woolexa Stealer developed on machine `KUXEY` in `shelcodeloader` |
 | June 2026 | Malicious `.mrpack` distributed via compromised Discord account |
 | June 2026 | Sample acquired and analysis conducted |
 | June 13, 2026 | C2 panel infrastructure documented during active analysis |
@@ -579,7 +579,7 @@ curl -k https://130.12.242.204/api/stealer/alert
 
 | Type | Value |
 |---|---|
-| **Discord Username** | `shelcodeloader` |
+| **Discord Username** | `bwnnyirl` |
 | **Discord User ID** | `543708648233369610` |
 | **Minecraft UUID** | `ac4b71bf-ca5a-4801-9654-829d67a9fc3b` |
 | **Minecraft Username** | `dailussxd` |
